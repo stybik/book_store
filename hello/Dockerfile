@@ -1,7 +1,7 @@
-#  Pull base image
+# Pull base image
 FROM python:3.7
 
-# Set Environment variables
+# Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
