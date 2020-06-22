@@ -25,10 +25,11 @@ def charge(request):
     u.user_permissions.add(permission)
 
     if request.method == 'POST':
+
         charge = stripe.Charge.create(
             amount=3900,
-            currency='usd',
+            currency='inr',
             description='Purchase all books',
-            source=request.POST['stripeToken']
+            source=request.POST['stripeToken'],
         )
         return render(request, 'orders/charge.html')
