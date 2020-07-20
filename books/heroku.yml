@@ -1,0 +1,16 @@
+setup:
+  addons:
+  - plan: heroku-postgresql
+
+build:
+  docker:
+    web: Dcokerfile
+
+release:
+  image: web
+  command:
+    - python manage.py collectstatic --no-input
+
+run:
+  web: gunicorn bookstore_project.wsgi
+
