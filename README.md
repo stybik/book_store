@@ -1,2 +1,3 @@
-# DjangoForProfessionals
-Apps from Dev to Deployment - Django For Professionals by William Vincent
+
+# book_store
+book store project from django for professionals
